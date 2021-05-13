@@ -106,7 +106,7 @@ public class TwitterProducer {
     }
 
     public Client createTwitterClient(BlockingQueue<String> msgQueue) {
-
+     
         Properties prop = new Properties();
         try {
             prop.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("secrets"));
